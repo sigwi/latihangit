@@ -1,0 +1,14 @@
+{%extends "base.html"%}
+
+{%block title%}
+  {{heading}}
+{%endblock title%}
+
+{%block content%}
+  <h1>{{heading}}</h1>
+  {%for i in post%}
+   <h1>{{i.judul}}</h1>
+   <p>{{i.body}}</p>
+   <p>{{i.category}}</p>
+  {%endfor%}
+{%endblock content%}
